@@ -19,3 +19,7 @@ In the project directory, you can run:
 [x] => added { antd } for Ui Design [Antdesign](https://ant.design/).
 [x] => added Redux Implimentation in app Folder
 [x]=> rendered crypto and news feed
+
+## deployed in netlify
+
+[Cryptoverse](https://projectmycryptoverse.netlify.app)
