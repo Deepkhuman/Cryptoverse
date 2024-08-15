@@ -361,6 +361,20 @@ a:hover {
 	min-width: 200px;
 	border-radius: 15px;
 }
+
+.crypto-card .ant-card {
+	transition: all 0.3s ease;
+	border: 1px solid #e0e0e0;
+	background-color: #ffffff;
+}
+
+.crypto-card .ant-card:hover {
+	transform: scale(1.05);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	border-color: #b0b0b0;
+	z-index: 1;
+}
+
 .crypto-card .crypto-image {
 	width: 35px;
 }
