@@ -5,12 +5,13 @@ import millify from "millify";
 import { Link } from "react-router-dom";
 import Cryptocurrencies from "./Cryptocurrencies";
 import News from "./News";
+import Loader from "./Loader";
 const { Title } = Typography;
 
 const Homepage = () => {
 	const { data, isFetching } = useGetCryptosQuery(10);
 	const globalstats = data?.data?.stats;
-	if (isFetching) return "Loading...";
+	if (isFetching) return <Loader />;
 	return (
 		<>
 			<Title level={2} className="heading">

@@ -12,6 +12,7 @@ In the project directory, you can run:
 
 (!) => Rapid Api for cryptocurrencies [API](https://rapidapi.com/)
 (!) => Redux Toolkit [ReduxToolkit](https://redux.js.org/)
+(!) => Chartjs 2 for Charts [ChartJS 2](https://chartjs.com/)
 
 ## Project
 

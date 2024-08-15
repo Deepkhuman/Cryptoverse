@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Typography, Row, Col, Card } from "antd";
 import { useGetMarketTrendsQuery } from "../services/cryptoNewsApi"; // Ensure this path is correct
 import { Link } from "react-router-dom";
+import Loader from "./Loader";
 const { Title } = Typography;
 
 const News = ({ simplified }) => {
@@ -13,7 +14,7 @@ const News = ({ simplified }) => {
 			Setnews(cryptoNews.data.news);
 		}
 	}, [cryptoNews]);
-	if (isLoading) return <div>Loading...</div>;
+	if (isLoading) return <Loader />;
 	return (
 		<>
 			<Row gutter={[24, 24]}>
