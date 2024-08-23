@@ -26,7 +26,11 @@ const News = ({ simplified }) => {
 									<Title className="news-title" level={5}>
 										{news.article_title}
 									</Title>
-									<img className="img" src={news?.article_photo_url} />
+									<img
+										className="img"
+										alt="image"
+										src={news?.article_photo_url}
+									/>
 								</div>
 								<p>{news.post_time_utc}</p>
 								<div style={{ color: "red" }}>

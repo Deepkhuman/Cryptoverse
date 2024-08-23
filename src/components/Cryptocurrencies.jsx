@@ -45,7 +45,13 @@ const Cryptocurrencies = ({ simplified }) => {
 						<Link to={`/crypto/${currency.uuid}`}>
 							<Card
 								title={`${currency.rank}. ${currency.name}`}
-								extra={<img src={currency.iconUrl} className="crypto-image" />}
+								extra={
+									<img
+										src={currency.iconUrl}
+										alt="img"
+										className="crypto-image"
+									/>
+								}
 								size={30}
 								className="ant-card-hover"
 							>
