@@ -22,7 +22,7 @@ const Navbar = () => {
 	}, []);
 
 	useEffect(() => {
-		if (screensize <= 768) {
+		if (screensize <= 800) {
 			setActiveMenu(false);
 		} else {
 			setActiveMenu(true);
@@ -61,10 +61,11 @@ const Navbar = () => {
 				<Button
 					className="menu-control-container"
 					onClick={() => setActiveMenu(!activeMenu)}
-				></Button>
+				>
+					<MenuOutlined></MenuOutlined>
+				</Button>
 			</div>
 			{activeMenu && <Menu theme="dark" items={menuItems}></Menu>}
-			<MenuOutlined></MenuOutlined>
 		</div>
 	);
 };
